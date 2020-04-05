@@ -121,7 +121,7 @@ if __name__=="__main__":
 
  
 ![plot](https://user-images.githubusercontent.com/43890895/78510878-b003e100-7798-11ea-8847-1b8ce6e6b295.jpg)
-**plot**
+**plot Random Variable**
  
  
  
