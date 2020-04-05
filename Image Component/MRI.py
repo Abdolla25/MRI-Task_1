@@ -10,7 +10,7 @@
 
 
 import numpy as np
-import cv2 as cv
+from cv2 import cv2 as cv
 import matplotlib.pyplot as p
 from numpy import random
 def main ():
