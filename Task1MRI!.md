@@ -71,6 +71,7 @@ animate_bloch(vectors, duration=0.1, save_all=False)
  **Relaxation-excitation Trajectory**
 
 # Fourrier Code:
+Here we use absoulute , angle ,real and imaginary to show each forrier component in Matplot show
 ``` ruby
 
 import numpy as np
