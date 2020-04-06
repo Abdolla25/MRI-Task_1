@@ -10,37 +10,48 @@
 
 This is a representation for Bloch Equation in 3-D space using Python IDE
 
-  - Excitation -Relaxation Mode
-  - Excitation -Relaxation Trajectory
-  - Relaxation-Excitation Mode
-  - Relaxation-Excitation Trajectory
+The animations below shows the following:
+
+  - M vector with angular frequency 30deg
+  - Excitation Mode with angular frequency 30deg
+  - Relaxation Mode with angular frequency 30deg
+  - Excitation - Relaxation Mode
+  - Excitation - Relaxation Trajectory on X-Y plane
+  - Relaxation - Excitation Mode
+  - Relaxation - Excitation Trajectory on X-Y plane
  
 
 # Bloch Equation Code:
-Main Equation of M vector:-
-> X = sin(z) * cos(a*t)
+Main Equations for M vector:-
+> X = sin(z) * cos(t)
 
-> Y = sin(z) * sin(a*t)
+> Y = sin(z) * sin(t)
 
 > Z = cos(z)
 
-where z is the angular frequency.
+where t represents the angle of rotation, z is the angular frequency, by changing z value with respect to t time we have the following representations:
 
-Also you can set numberOfLoops = 1 to generate single mode [Excitaion or Relaxation] only!
+Excitation Model
+> z =  pi/2 * sin(t/(4))
+
+Relaxation Model
+> z =  pi/2 * cos(t/(4))
+
+Also you can set numberOfLoops = 1 to generate single mode [Excitaion or Relaxation] only or = 2 to generate dual modes.
 
  ```python
 import numpy as np
 import imageio
 from qutip import Bloch
 def animate_bloch(vectors, duration=0.1, save_all=False):
-    numberOfLoops = 2 #Enter '1' to apply only ONE mode [Excitation or Relaxation] or '2' to to apply only BOTH modes [Excitation and Relaxation] starting with the selected mode
+    numberOfLoops = 1 #Enter '1' to apply only ONE mode [Excitation or Relaxation] or '2' to to apply only BOTH modes [Excitation and Relaxation] starting with the selected mode
     if numberOfLoops == 1:
         maxAngle = 2*np.pi
     elif numberOfLoops == 2:
         maxAngle = 4*np.pi
-    mode = 0 #Enter '0' to activate Excitation Mode or '1' to activate Relaxation Mode 
-    omega = 0
-    z = np.pi/4
+    mode = 1 #Enter '0' to activate Excitation Mode or '1' to activate Relaxation Mode 
+    omega = np.pi/6 #Enter the angular frequency 
+    z = 0
     sqAngle = np.pi/2
     a = 5
     vectorM = Bloch()
@@ -66,34 +77,47 @@ def animate_bloch(vectors, duration=0.1, save_all=False):
         images.append(imageio.imread(filename))
     imageio.mimsave('bloch_anim.gif', images, duration=duration)
 vectors = []
-animate_bloch(vectors, duration=0.1, save_all=False)
- 
+animate_bloch(vectors, duration=0.1, save_all=False) 
  ```
+ ---
 
-by changing z value with respect to t time we have the following representations:
+# Animations in 3-D:
 
-Excitation Model
-> z =  pi/2 * sin(t/(4))
+Tho following vectors represents different cases:
 
-Relaxation Model
-> z =  pi/2 * cos(t/(4))
+- Green: M vector on Relaxation with 0/30deg angular frequency.
+- Orange: M vector on Excitation/Relaxation with B.
+- Blue: M vector on Excitation with 90deg with Z vector.
 
- # Animations in 3-D:
- ![Excitaion-Relaxation Mode](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif)
+**M vector with angular frequency 30deg**
 
- **Excitaion-Relaxation Model**
+![M vector with angular frequency 30deg](/Bloch%20EQ/GIFs/M%20vector%20with%20angular%20frequency%2030deg.gif)
 
- ![Excitaion Relaxation Trajectory](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif)
+**Excitation Mode with angular frequency 30deg**
 
- **Excitaion-Relaxation Trajectory**
+![Excitation Mode with angular frequency 30deg](/Bloch%20EQ/GIFs/Excitation%20Mode%20with%20angular%20frequency%2030deg.gif)
 
- ![Relaxation-Excitaion Mode](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif)
+**Relaxation Mode with angular frequency 30deg**
 
- **Relaxation-Excitaion Mode**
+![Relaxation Mode with angular frequency 30deg](/Bloch%20EQ/GIFs/Relaxation%20Mode%20with%20angular%20frequency%2030deg.gif)
 
- ![Relaxation-Excitaion Trajectory](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif)
+---
 
- **Relaxation-Excitaion Trajectory**
+**Excitaion-Relaxation Mode**
+ 
+![Excitaion-Relaxation Mode](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif)
+
+**Excitaion-Relaxation Trajectory**
+
+![Excitaion Relaxation Trajectory](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif)
+
+**Relaxation-Excitaion Mode**
+
+![Relaxation-Excitaion Mode](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif)
+
+**Relaxation-Excitaion Trajectory**
+
+![Relaxation-Excitaion Trajectory](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif)
 
 # Fourrier Code:
 

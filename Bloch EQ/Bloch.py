@@ -2,14 +2,14 @@ import numpy as np
 import imageio
 from qutip import Bloch
 def animate_bloch(vectors, duration=0.1, save_all=False):
-    numberOfLoops = 2 #Enter '1' to apply only ONE mode [Excitation or Relaxation] or '2' to to apply only BOTH modes [Excitation and Relaxation] starting with the selected mode
+    numberOfLoops = 1 #Enter '1' to apply only ONE mode [Excitation or Relaxation] or '2' to to apply only BOTH modes [Excitation and Relaxation] starting with the selected mode
     if numberOfLoops == 1:
         maxAngle = 2*np.pi
     elif numberOfLoops == 2:
         maxAngle = 4*np.pi
-    mode = 0 #Enter '0' to activate Excitation Mode or '1' to activate Relaxation Mode 
-    omega = 0
-    z = np.pi/4
+    mode = 1 #Enter '0' to activate Excitation Mode or '1' to activate Relaxation Mode 
+    omega = np.pi/6 #Enter the angular frequency 
+    z = 0
     sqAngle = np.pi/2
     a = 5
     vectorM = Bloch()
