@@ -157,24 +157,20 @@ def main ():
 if __name__=="__main__":
     main()
 ```
-# Image And its fourier
- 
-![1](https://user-images.githubusercontent.com/43890895/78510819-4edc0d80-7798-11ea-971a-e93dc3bf3dce.jpg)
+# Image And its Fourier Components
 
 **Original Image**
 
-
-![comp](https://user-images.githubusercontent.com/43890895/78510849-8a76d780-7798-11ea-895d-5629a38e94fc.jpg)
+![1](https://user-images.githubusercontent.com/43890895/78510819-4edc0d80-7798-11ea-971a-e93dc3bf3dce.jpg)
 
 **Fourier transform components**
 
- 
+![comp](https://user-images.githubusercontent.com/43890895/78510849-8a76d780-7798-11ea-895d-5629a38e94fc.jpg)
+
+**Gray Beam**
  
 ![gray_beam](https://user-images.githubusercontent.com/43890895/78510869-a4181f00-7798-11ea-9d93-33ace5797d00.jpg)
 
-**Gray Beam**
-
+**Plot Random Variable**
  
 ![plot](https://user-images.githubusercontent.com/43890895/78510878-b003e100-7798-11ea-8847-1b8ce6e6b295.jpg)
-
-**Plot Random Variable**
