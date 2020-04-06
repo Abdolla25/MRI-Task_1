@@ -79,19 +79,19 @@ Relaxation Model
 > z =  pi/2 * cos(t/(4))
 
  # Animations in 3-D:
- ![Excitaion-Relaxation Mode](https://raw.githubusercontent.com/Abdolla25/MRI-Task_1/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif?token=AKO3RT3TEDCMH6PFGTGOLNC6SOJRC)
+ ![Excitaion-Relaxation Mode](/blob/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif)
 
  **Excitaion-Relaxation Model**
 
- ![Excitaion Relaxation trajectory](https://raw.githubusercontent.com/Abdolla25/MRI-Task_1/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif?token=AKO3RT7BPH7ZYXQF6U5UICC6SOJZA)
+ ![Excitaion Relaxation Trajectory](/blob/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif)
 
  **Excitaion-Relaxation Trajectory**
 
- ![](https://raw.githubusercontent.com/Abdolla25/MRI-Task_1/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif?token=AKO3RT7T5UBASXM2422XB5C6SOJ3W)
+ ![Relaxation-Excitaion Mode](/blob/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif)
 
  **Relaxation-Excitaion Mode**
 
- ![](https://raw.githubusercontent.com/Abdolla25/MRI-Task_1/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif?token=AKO3RT2HDY4YMXYREVWJEYK6SOJ6I)
+ ![Relaxation-Excitaion Trajectory](/blob/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif)
 
  **Relaxation-Excitaion Trajectory**
 
