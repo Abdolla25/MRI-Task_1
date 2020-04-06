@@ -79,19 +79,19 @@ Relaxation Model
 > z =  pi/2 * cos(t/(4))
 
  # Animations in 3-D:
- ![Excitaion-Relaxation Mode](/blob/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif)
+ ![Excitaion-Relaxation Mode](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Mode.gif)
 
  **Excitaion-Relaxation Model**
 
- ![Excitaion Relaxation Trajectory](/blob/master/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif)
+ ![Excitaion Relaxation Trajectory](/Bloch%20EQ/GIFs/Excitation-Relaxation%20Trajectory.gif)
 
  **Excitaion-Relaxation Trajectory**
 
- ![Relaxation-Excitaion Mode](/blob/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif)
+ ![Relaxation-Excitaion Mode](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Mode.gif)
 
  **Relaxation-Excitaion Mode**
 
- ![Relaxation-Excitaion Trajectory](/blob/master/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif)
+ ![Relaxation-Excitaion Trajectory](/Bloch%20EQ/GIFs/Relaxation%20-%20Excitation%20Trajectory.gif)
 
  **Relaxation-Excitaion Trajectory**
 
